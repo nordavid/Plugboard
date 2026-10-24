@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%@, %lld files</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%1$@, %2$#@files@</string>
+		<key>files</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%2$lld Datei</string>
+			<key>other</key>
+			<string>%2$lld Dateien</string>
+		</dict>
+	</dict>
+	<key>%@: %@ in %lld files</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%1$@: %2$@ in %3$#@files@</string>
+		<key>files</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%3$lld Datei</string>
+			<key>other</key>
+			<string>%3$lld Dateien</string>
+		</dict>
+	</dict>
+	<key>%lld components</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Komponente</string>
+			<key>other</key>
+			<string>%lld Komponenten</string>
+		</dict>
+	</dict>
+	<key>%lld files</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Datei</string>
+			<key>other</key>
+			<string>%lld Dateien</string>
+		</dict>
+	</dict>
+	<key>%lld files selected</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Datei ausgewählt</string>
+			<key>other</key>
+			<string>%lld Dateien ausgewählt</string>
+		</dict>
+	</dict>
+	<key>%lld items selected</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Objekt ausgewählt</string>
+			<key>other</key>
+			<string>%lld Objekte ausgewählt</string>
+		</dict>
+	</dict>
+	<key>%lld plug-ins</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Plug-in</string>
+			<key>other</key>
+			<string>%lld Plug-ins</string>
+		</dict>
+	</dict>
+	<key>%lld plug-ins from %lld vendors</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@plugins@ von %#@vendors@</string>
+		<key>plugins</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%1$lld Plug-in</string>
+			<key>other</key>
+			<string>%1$lld Plug-ins</string>
+		</dict>
+		<key>vendors</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%2$lld Hersteller</string>
+			<key>other</key>
+			<string>%2$lld Herstellern</string>
+		</dict>
+	</dict>
+	<key>%lld shells</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Shell</string>
+			<key>other</key>
+			<string>%lld Shells</string>
+		</dict>
+	</dict>
+	<key>%lld versions</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Version</string>
+			<key>other</key>
+			<string>%lld Versionen</string>
+		</dict>
+	</dict>
+	<key>Couldn't delete %lld items</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Objekt konnte nicht gelöscht werden</string>
+			<key>other</key>
+			<string>%lld Objekte konnten nicht gelöscht werden</string>
+		</dict>
+	</dict>
+	<key>Couldn't move %lld items to the Trash</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Objekt konnte nicht in den Papierkorb gelegt werden</string>
+			<key>other</key>
+			<string>%lld Objekte konnten nicht in den Papierkorb gelegt werden</string>
+		</dict>
+	</dict>
+	<key>Couldn't put back %lld items</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Objekt konnte nicht zurückgelegt werden</string>
+			<key>other</key>
+			<string>%lld Objekte konnten nicht zurückgelegt werden</string>
+		</dict>
+	</dict>
+	<key>Delete %lld Items</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Objekt löschen</string>
+			<key>other</key>
+			<string>%lld Objekte löschen</string>
+		</dict>
+	</dict>
+	<key>Deleted %lld items</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Objekt gelöscht</string>
+			<key>other</key>
+			<string>%lld Objekte gelöscht</string>
+		</dict>
+	</dict>
+	<key>Exported %lld plug-ins</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Plug-in exportiert</string>
+			<key>other</key>
+			<string>%lld Plug-ins exportiert</string>
+		</dict>
+	</dict>
+	<key>Move %lld Items to Trash</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Objekt in den Papierkorb legen</string>
+			<key>other</key>
+			<string>%lld Objekte in den Papierkorb legen</string>
+		</dict>
+	</dict>
+	<key>Moved %lld items to the Trash</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Objekt in den Papierkorb gelegt</string>
+			<key>other</key>
+			<string>%lld Objekte in den Papierkorb gelegt</string>
+		</dict>
+	</dict>
+	<key>Put back %lld items</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Objekt zurückgelegt</string>
+			<key>other</key>
+			<string>%lld Objekte zurückgelegt</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,283 @@
+/* Plugboard – deutsche Übersetzung.
+   Anrede: du. Begriffe: Plug-in, Papierkorb, Hersteller, Speicherplatz, deinstallieren.
+   Pluralformen stehen in Localizable.stringsdict. Prüfen mit Scripts/check-localization.py. */
+
+/* Navigation */
+"Overview" = "Übersicht";
+"All Plug-ins" = "Alle Plug-ins";
+"Formats" = "Formate";
+"Cleanup" = "Aufräumen";
+"Drivers" = "Treiber";
+"Nothing to clean up. Plugboard checks again with every scan." = "Nichts aufzuräumen. Plugboard prüft bei jedem Scan erneut.";
+"Plug-ins" = "Plug-ins";
+"Files" = "Dateien";
+"Plug-in" = "Plug-in";
+
+/* Formats */
+"Audio Units" = "Audio Units";
+"AUv3 Extensions" = "AUv3-Erweiterungen";
+"Waves Plug-ins" = "Waves-Plug-ins";
+"RTAS (Legacy)" = "RTAS (veraltet)";
+"Audio Drivers" = "Audiotreiber";
+"MIDI Drivers" = "MIDI-Treiber";
+
+/* Kinds */
+"Instrument" = "Instrument";
+"Effect" = "Effekt";
+"MIDI Effect" = "MIDI-Effekt";
+"Generator" = "Generator";
+"Audio Driver" = "Audiotreiber";
+"MIDI Driver" = "MIDI-Treiber";
+"Other" = "Andere";
+"Unknown" = "Unbekannt";
+
+/* Architecture */
+"Universal" = "Universal";
+"Apple silicon" = "Apple Silicon";
+"Intel only" = "Nur Intel";
+"32-bit" = "32-Bit";
+"Runs natively on Apple silicon and Intel" = "Läuft nativ auf Apple Silicon und Intel";
+"Runs natively on Apple silicon" = "Läuft nativ auf Apple Silicon";
+"Needs Rosetta on Apple silicon" = "Benötigt Rosetta auf Apple Silicon";
+"Can't load on current macOS" = "Lässt sich unter aktuellem macOS nicht laden";
+"No executable code found" = "Kein ausführbarer Code gefunden";
+
+/* Locations */
+"User" = "Benutzer";
+"System" = "System";
+"App" = "App";
+"Custom Folder" = "Eigener Ordner";
+"Your Library folder, only for you" = "Dein Library-Ordner, nur für dich";
+"The shared Library folder, for every user" = "Der gemeinsame Library-Ordner, für alle Benutzer";
+"Inside an app folder" = "In einem App-Ordner";
+"A folder you added in Settings" = "Ein Ordner, den du in den Einstellungen hinzugefügt hast";
+"All Locations" = "Alle Orte";
+"Apps and Custom Folders" = "Apps und eigene Ordner";
+"All Types" = "Alle Typen";
+"Instruments" = "Instrumente";
+"Effects" = "Effekte";
+"MIDI Effects" = "MIDI-Effekte";
+
+/* Signatures */
+"Identified developer" = "Verifizierter Entwickler";
+"Ad-hoc signature" = "Ad-hoc-Signatur";
+"Not signed" = "Nicht signiert";
+
+/* Cleanup categories */
+"Can't Load" = "Nicht ladbar";
+"Intel Only" = "Nur Intel";
+"VST2 Duplicates" = "VST2-Duplikate";
+"Unused AAX" = "AAX ohne Pro Tools";
+"Duplicate Copies" = "Doppelte Kopien";
+"Older Waves Versions" = "Ältere Waves-Versionen";
+"These plug-ins can't load on this Mac" = "Diese Plug-ins lassen sich auf diesem Mac nicht laden";
+"These plug-ins need Rosetta" = "Diese Plug-ins benötigen Rosetta";
+"VST2 copies of VST3 plug-ins" = "VST2-Kopien von VST3-Plug-ins";
+"Only Pro Tools loads AAX plug-ins" = "Nur Pro Tools lädt AAX-Plug-ins";
+"Installed in more than one place" = "An mehreren Orten installiert";
+"Waves keeps every version you install" = "Waves behält jede installierte Version";
+"They're 32-bit, PowerPC or RTAS builds, or need a newer macOS. No current DAW can use them." = "Es sind 32-Bit-, PowerPC- oder RTAS-Versionen, oder sie benötigen ein neueres macOS. Keine aktuelle DAW kann sie verwenden.";
+"They only load in a DAW opened with Rosetta, which runs slower. Check the vendor's website for an Apple silicon update before removing them." = "Sie laden nur in einer DAW, die mit Rosetta geöffnet wurde, und die läuft langsamer. Prüfe vor dem Entfernen auf der Website des Herstellers, ob es ein Update für Apple Silicon gibt.";
+"Each of these also has a VST3 version, which DAWs prefer. Older projects saved with the VST2 version may not find the plug-in after removal." = "Zu jedem gibt es auch eine VST3-Version, die DAWs bevorzugen. Ältere Projekte, die mit der VST2-Version gespeichert wurden, finden das Plug-in danach eventuell nicht mehr.";
+"Pro Tools and Media Composer aren't installed on this Mac. Remove these if you don't plan to use Pro Tools here." = "Pro Tools und Media Composer sind auf diesem Mac nicht installiert. Entferne diese, wenn du Pro Tools hier nicht nutzen willst.";
+"The same plug-in and format exists in more than one folder, such as your own Library and the shared one. Keep the newer copy." = "Dasselbe Plug-in im selben Format liegt in mehreren Ordnern, zum Beispiel in deiner eigenen und in der gemeinsamen Library. Behalte die neuere Kopie.";
+"Remove an older version only if your licenses cover the newest one and you no longer open projects that use it." = "Entferne eine ältere Version nur, wenn deine Lizenzen die neueste abdecken und du keine Projekte mehr öffnest, die sie verwenden.";
+"32-bit or PowerPC only" = "Nur 32-Bit oder PowerPC";
+"RTAS, retired in Pro Tools 11" = "RTAS, seit Pro Tools 11 eingestellt";
+"Built for Apple silicon only" = "Nur für Apple Silicon gebaut";
+"Requires macOS %@" = "Benötigt macOS %@";
+
+/* Removal categories */
+"Plug-in Files" = "Plug-in-Dateien";
+"Settings" = "Einstellungen";
+"Caches" = "Caches";
+"Presets" = "Presets";
+"Support Files" = "Support-Dateien";
+"Installed by the Same Package" = "Vom selben Paket installiert";
+"May include presets you made yourself." = "Kann Presets enthalten, die du selbst erstellt hast.";
+"May include sound libraries or licenses. Keep them if you might reinstall." = "Kann Sound-Librarys oder Lizenzen enthalten. Behalte sie, falls du neu installieren willst.";
+"Listed in the installer receipt. Review before removing." = "Im Installationsbeleg aufgeführt. Prüfe sie vor dem Entfernen.";
+
+/* Table */
+"Name" = "Name";
+"Vendor" = "Hersteller";
+"Format" = "Format";
+"Type" = "Typ";
+"Version" = "Version";
+"Architecture" = "Architektur";
+"Size" = "Größe";
+"Installed" = "Installiert";
+"Modified" = "Geändert";
+"Location" = "Ort";
+"Calculating size" = "Größe wird berechnet";
+"Scanning plug-in folders…" = "Plug-in-Ordner werden durchsucht …";
+"No plug-ins match these filters" = "Keine Plug-ins passen zu diesen Filtern";
+"Choose another location or type to see more." = "Wähle einen anderen Ort oder Typ, um mehr zu sehen.";
+"Clear Filters" = "Filter zurücksetzen";
+"All clean" = "Alles sauber";
+"Plugboard found nothing in this category." = "Plugboard hat in dieser Kategorie nichts gefunden.";
+"Plugboard found no plug-ins in this format on this Mac." = "Plugboard hat auf diesem Mac keine Plug-ins in diesem Format gefunden.";
+"No plug-ins found" = "Keine Plug-ins gefunden";
+"Plugboard looks in every standard plug-in folder. If you keep plug-ins somewhere else, add that folder in Settings." = "Plugboard sucht in allen Standardordnern für Plug-ins. Wenn du Plug-ins woanders aufbewahrst, füge den Ordner in den Einstellungen hinzu.";
+"Open Settings" = "Einstellungen öffnen";
+"Removing all of them frees %@." = "Alle zu entfernen gibt %@ frei.";
+"Review and Remove…" = "Prüfen und entfernen …";
+
+/* Actions */
+"Show in Finder" = "Im Finder anzeigen";
+"Show App in Finder" = "App im Finder anzeigen";
+"Copy Path" = "Pfad kopieren";
+"Uninstall…" = "Deinstallieren …";
+"Move to Trash" = "In den Papierkorb legen";
+"Delete Immediately…" = "Sofort löschen …";
+"Delete" = "Löschen";
+"Cancel" = "Abbrechen";
+"OK" = "OK";
+"Undo" = "Widerrufen";
+"Dismiss" = "Schließen";
+"More" = "Mehr";
+"Remove…" = "Entfernen …";
+"Rescan" = "Neu scannen";
+"Export List" = "Liste exportieren";
+"Export List…" = "Liste exportieren …";
+"Filter" = "Filter";
+"Inspector" = "Inspektor";
+"Show Inspector" = "Inspektor einblenden";
+"Hide Inspector" = "Inspektor ausblenden";
+"Show As" = "Anzeigen als";
+"View" = "Ansicht";
+"Reset Audio Unit Cache…" = "Audio-Unit-Cache zurücksetzen …";
+"Search plug-ins" = "Plug-ins durchsuchen";
+
+/* Toolbar help */
+"Show one row per plug-in with its formats inside, or one row per file" = "Eine Zeile pro Plug-in mit seinen Formaten darin, oder eine Zeile pro Datei";
+"Filter by location and type" = "Nach Ort und Typ filtern";
+"Scan all plug-in folders again" = "Alle Plug-in-Ordner erneut durchsuchen";
+"Save the plug-ins shown as a CSV file" = "Die angezeigten Plug-ins als CSV-Datei sichern";
+"Removing…" = "Wird entfernt …";
+"Looking for plug-ins…" = "Plug-ins werden gesucht …";
+"Reading %lld of %lld plug-ins…" = "%lld von %lld Plug-ins werden gelesen …";
+"Calculating sizes, %lld of %lld…" = "Größen werden berechnet, %lld von %lld …";
+
+/* Inspector */
+"No selection" = "Keine Auswahl";
+"Select a plug-in to see where it's installed and what it contains." = "Wähle ein Plug-in, um zu sehen, wo es installiert ist und was es enthält.";
+"Details" = "Details";
+"Shared" = "Geteilt";
+"%@ also used by other copies" = "%@ auch von anderen Kopien genutzt";
+"These files are hard links. Their space is freed only when every copy is removed." = "Diese Dateien sind Hardlinks. Ihr Speicherplatz wird erst frei, wenn alle Kopien entfernt sind.";
+"Requires" = "Benötigt";
+"macOS %@ or later" = "macOS %@ oder neuer";
+"Contains" = "Enthält";
+"Identity" = "Identität";
+"Bundle ID" = "Bundle-ID";
+"Signed by" = "Signiert von";
+"Team ID" = "Team-ID";
+"File" = "Datei";
+"Links to" = "Verweist auf";
+"Part of" = "Teil von";
+"Other formats" = "Andere Formate";
+"Differs by format" = "Je nach Format unterschiedlich";
+"Total size" = "Gesamtgröße";
+"Freed when removed" = "Frei nach dem Entfernen";
+"Some files are hard links shared with copies that stay installed." = "Einige Dateien sind Hardlinks, die mit installiert bleibenden Kopien geteilt werden.";
+"Unknown vendor" = "Unbekannter Hersteller";
+"Can't load on this Mac" = "Auf diesem Mac nicht ladbar";
+"Loads only in a DAW opened with Rosetta." = "Lädt nur in einer DAW, die mit Rosetta geöffnet wurde.";
+"Installed more than once" = "Mehrfach installiert";
+"The same format exists in another folder too." = "Dasselbe Format liegt auch in einem anderen Ordner.";
+"Turned off in Pro Tools" = "In Pro Tools deaktiviert";
+"It's in the “Plug-Ins (Unused)” folder, which Pro Tools skips." = "Es liegt im Ordner „Plug-Ins (Unused)“, den Pro Tools überspringt.";
+"Audio Unit" = "Audio Unit";
+"Codes" = "Codes";
+"Type, subtype and manufacturer, as used by auval." = "Typ, Subtyp und Hersteller, wie auval sie verwendet.";
+"Path" = "Pfad";
+"Shows this format's details" = "Zeigt die Details dieses Formats";
+"This extension is part of its app. To remove it, remove the app." = "Diese Erweiterung gehört zu ihrer App. Um sie zu entfernen, entferne die App.";
+"Review every format and leftover file before removing them." = "Prüfe alle Formate und übrigen Dateien, bevor du sie entfernst.";
+
+/* Overview */
+"Disk space" = "Speicherplatz";
+"Vendors" = "Hersteller";
+"Calculating" = "Wird berechnet";
+"Cleanup suggestions" = "Aufräumvorschläge";
+"Disk space by format" = "Speicherplatz nach Format";
+"Largest vendors" = "Größte Hersteller";
+"Calculating sizes…" = "Größen werden berechnet …";
+"DAWs on this Mac" = "DAWs auf diesem Mac";
+"Plugboard didn't find a DAW in Applications." = "Plugboard hat im Ordner „Programme“ keine DAW gefunden.";
+"No DAW here loads %@." = "Keine DAW auf diesem Mac lädt %@.";
+"Largest plug-ins" = "Größte Plug-ins";
+
+/* Waves */
+"Newest" = "Neueste";
+"Remove Waves V%lld" = "Waves V%lld entfernen";
+
+/* Confirmations */
+"Move “%@” to the Trash?" = "„%@“ in den Papierkorb legen?";
+"Move %lld plug-ins to the Trash?" = "%lld Plug-ins in den Papierkorb legen?";
+"Delete “%@” immediately?" = "„%@“ sofort löschen?";
+"Delete %lld plug-ins immediately?" = "%lld Plug-ins sofort löschen?";
+"You can't undo this action." = "Du kannst diese Aktion nicht widerrufen.";
+"You can put them back with Undo or from the Trash." = "Du kannst sie mit „Widerrufen“ oder aus dem Papierkorb zurücklegen.";
+"Frees %@." = "Gibt %@ frei.";
+"Core Audio restarts to unload the driver, so all audio stops for a moment." = "Core Audio startet neu, um den Treiber zu entladen. Dabei setzt der Ton kurz aus.";
+
+/* Removal sheet */
+"Uninstall “%@”" = "„%@“ deinstallieren";
+"Uninstall %lld plug-ins" = "%lld Plug-ins deinstallieren";
+"Choose what to remove. Plugboard moves everything to the Trash unless you choose to delete it immediately." = "Wähle, was entfernt werden soll. Plugboard legt alles in den Papierkorb, außer du entscheidest dich fürs sofortige Löschen.";
+"Deselect All" = "Alle abwählen";
+"Select All" = "Alle auswählen";
+"Installer receipts" = "Installationsbelege";
+"Looking for installer receipts…" = "Installationsbelege werden gesucht …";
+"Forget installer receipts" = "Installationsbelege vergessen";
+"Delete immediately instead of moving to the Trash" = "Sofort löschen statt in den Papierkorb legen";
+
+/* Results */
+"And %lld more." = "Und %lld weitere.";
+"Plugboard only removes items inside plug-in and support folders." = "Plugboard entfernt nur Objekte in Plug-in- und Support-Ordnern.";
+"It was already moved or deleted." = "Es wurde bereits verschoben oder gelöscht.";
+"An app is using it. Quit your DAW and try again." = "Eine App verwendet es. Beende deine DAW und versuche es erneut.";
+"macOS blocked changes inside Applications. Allow Plugboard in System Settings > Privacy & Security > App Management, then try again." = "macOS hat Änderungen im Ordner „Programme“ blockiert. Erlaube Plugboard unter Systemeinstellungen > Datenschutz & Sicherheit > App-Verwaltung und versuche es dann erneut.";
+"Quit any DAW that might be using it, then try again." = "Beende jede DAW, die es verwenden könnte, und versuche es dann erneut.";
+"They may have been removed from the Trash. Check the Trash in Finder." = "Sie wurden eventuell aus dem Papierkorb entfernt. Sieh im Papierkorb im Finder nach.";
+"Plugboard needs your password to move plug-ins installed for all users to the Trash." = "Plugboard benötigt dein Passwort, um Plug-ins, die für alle Benutzer installiert sind, in den Papierkorb zu legen.";
+"Plugboard needs your password to delete plug-ins installed for all users." = "Plugboard benötigt dein Passwort, um Plug-ins zu löschen, die für alle Benutzer installiert sind.";
+"Plugboard needs your password to put plug-ins back in the shared Library folder." = "Plugboard benötigt dein Passwort, um Plug-ins in den gemeinsamen Library-Ordner zurückzulegen.";
+
+/* Export */
+"Couldn't export the list" = "Die Liste konnte nicht exportiert werden";
+"Choose a folder you can write to, such as Documents, and try again." = "Wähle einen Ordner, in den du schreiben darfst, zum Beispiel „Dokumente“, und versuche es erneut.";
+"Size (bytes)" = "Größe (Byte)";
+"Signed By" = "Signiert von";
+
+/* Audio Unit cache */
+"Audio Unit cache reset. Logic Pro rescans plug-ins on its next launch." = "Audio-Unit-Cache zurückgesetzt. Logic Pro prüft die Plug-ins beim nächsten Start erneut.";
+"Couldn't reset the Audio Unit cache" = "Der Audio-Unit-Cache konnte nicht zurückgesetzt werden";
+"Quit Logic Pro and GarageBand, then try again." = "Beende Logic Pro und GarageBand und versuche es dann erneut.";
+"Reset the Audio Unit cache?" = "Audio-Unit-Cache zurücksetzen?";
+"Reset Cache" = "Cache zurücksetzen";
+"Quit Logic Pro and GarageBand first. Their next launch takes longer while they check every Audio Unit." = "Beende zuerst Logic Pro und GarageBand. Ihr nächster Start dauert länger, weil sie jede Audio Unit erneut prüfen.";
+
+/* Settings */
+"General" = "Allgemein";
+"Locations" = "Orte";
+"Ask before moving plug-ins to the Trash" = "Vor dem Verschieben in den Papierkorb fragen";
+"Large batches and drivers always ask first." = "Bei vielen Objekten und bei Treibern wird immer gefragt.";
+"Update the list when plug-ins change" = "Liste aktualisieren, wenn sich Plug-ins ändern";
+"Rescans automatically after an installer adds or removes plug-ins." = "Scannt automatisch neu, nachdem ein Installationsprogramm Plug-ins hinzugefügt oder entfernt hat.";
+"Audio Unit cache" = "Audio-Unit-Cache";
+"Reset…" = "Zurücksetzen …";
+"Makes Logic Pro and GarageBand check every Audio Unit again on their next launch." = "Logic Pro und GarageBand prüfen beim nächsten Start jede Audio Unit erneut.";
+"No additional folders" = "Keine weiteren Ordner";
+"Remove %@ from the list" = "%@ aus der Liste entfernen";
+"Stop scanning this folder" = "Diesen Ordner nicht mehr durchsuchen";
+"Add Folder…" = "Ordner hinzufügen …";
+"Add Folder" = "Ordner hinzufügen";
+"Additional folders" = "Weitere Ordner";
+"For plug-ins you keep outside the standard folders, such as a custom VST folder set in FL Studio or Ableton Live." = "Für Plug-ins außerhalb der Standardordner, zum Beispiel einen eigenen VST-Ordner aus FL Studio oder Ableton Live.";
+"Choose folders where you keep plug-ins outside the standard locations." = "Wähle Ordner, in denen du Plug-ins außerhalb der Standardorte aufbewahrst.";
+"Standard folders" = "Standardordner";
+"Show %@ in Finder" = "%@ im Finder anzeigen";
+"Not present" = "Nicht vorhanden";
