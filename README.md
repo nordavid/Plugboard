@@ -1,59 +1,63 @@
 # Plugboard
 
-Eine Mac-App, die alle installierten Audio-Plug-ins findet, anzeigt und sauber entfernt: für Logic Pro, FL Studio, Ableton Live, Pro Tools und jede andere DAW. Die Oberfläche ist auf Deutsch und Englisch und folgt der Systemsprache.
+A Mac app that finds every installed audio plug-in, shows what it is and removes it cleanly, for Logic Pro, FL Studio, Ableton Live, Pro Tools and any other DAW. The interface is in English, with a German localization that follows the system language.
 
-## Funktionen
+## Features
 
-- **Alle Formate und Orte**: Audio Units, VST3, VST, CLAP, AAX (inkl. „Plug-Ins (Unused)“), AUv3-Erweiterungen, Waves-Plug-ins und WaveShells, WPAPI, MAS, RTAS sowie Audio- und MIDI-Treiber. Jeweils im Benutzer- (`~/Library`) und im gemeinsamen Ordner (`/Library`), inklusive Hersteller-Unterordnern. Eigene Ordner lassen sich in den Einstellungen ergänzen.
-- **Details pro Plug-in**: Name, Hersteller, Format, Typ (Instrument, Effekt, MIDI), Version, Architektur (Universal, Apple Silicon, nur Intel, 32-Bit), Größe, Installations- und Änderungsdatum, Ort, Bundle-ID, Signatur, Audio-Unit-Codes und enthaltene Plug-ins bei Shells.
-- **Plug-ins statt Dateien**: Die AU-, VST3-, AAX- und CLAP-Version eines Produkts erscheinen als eine Zeile mit aufklappbaren Formaten. Umschaltbar auf eine Zeile pro Datei.
-- **Entfernen**: In den Papierkorb legen mit Widerrufen (⌘Z oder im Hinweis), sofort löschen mit Bestätigung, oder komplett deinstallieren.
-- **Komplett-Deinstallation**: Findet alle Formate eines Produkts plus Einstellungen, Caches, Presets, Logic-Plug-in-Einstellungen, Support-Ordner und Installationsbelege. Du wählst in einer Liste, was weg soll. Presets und Support-Dateien sind standardmäßig abgewählt.
-- **Aufräum-Helfer**: Nicht ladbare Plug-ins, nur Intel (Rosetta), VST2-Duplikate von VST3-Plug-ins, AAX ohne installiertes Pro Tools, doppelte Kopien und ältere Waves-Versionen, jeweils mit freiwerdendem Speicherplatz.
-- **Übersicht**: Anzahl, Speicherplatz nach Format und Hersteller, größte Plug-ins und welche Formate deine installierten DAWs überhaupt laden.
-- **Export**: Die angezeigte Liste als CSV, passend für Excel und Numbers in jeder Region.
-- **Werkzeuge**: Audio-Unit-Cache zurücksetzen (Logic Pro und GarageBand prüfen dann alle AUs neu). Die Liste aktualisiert sich automatisch, wenn ein Installationsprogramm Plug-ins ändert.
+- **Every format and location**: Audio Units, VST3, VST, CLAP, AAX (including Pro Tools' "Plug-Ins (Unused)"), AUv3 extensions, Waves plug-ins and WaveShells, WPAPI, MAS, RTAS, plus Core Audio and MIDI drivers. Both the user folder (`~/Library`) and the shared one (`/Library`) are scanned, including vendor subfolders. Extra folders can be added in Settings.
+- **Details for each plug-in**: name, vendor, format, type (instrument, effect, MIDI), version, architecture (Universal, Apple silicon, Intel only, 32-bit), size, install and modification dates, location, bundle ID, code signature, Audio Unit codes and, for shells, the plug-ins they contain.
+- **Plug-ins, not just files**: the AU, VST3, AAX and CLAP builds of one product appear as a single row with the formats inside. You can switch to one row per file.
+- **Removal**: move to the Trash with Undo (⌘Z or the button in the confirmation), delete immediately after a confirmation, or uninstall completely.
+- **Complete uninstall**: finds every format of a product plus its settings, caches, presets, Logic Pro plug-in settings, support folders and installer receipts. You choose what to remove from a list. Presets and support files start unselected.
+- **Cleanup helpers**: plug-ins that can't load, Intel-only plug-ins that need Rosetta, VST2 copies of VST3 plug-ins, AAX plug-ins without Pro Tools installed, duplicate copies and older Waves versions, each with the space it frees.
+- **Overview**: counts, disk space by format and vendor, the largest plug-ins and which formats the DAWs on your Mac actually load.
+- **Export**: the current list as CSV that opens correctly in Excel and Numbers in any region.
+- **Tools**: reset the Audio Unit cache, so Logic Pro and GarageBand validate every AU again. The list updates on its own when an installer adds or removes plug-ins.
 
-## Sicherheit
+## Safety
 
-- Standard ist immer der Papierkorb. Endgültiges Löschen nur nach Bestätigung.
-- Ein Administratorpasswort wird nur abgefragt, wenn ein Plug-in für alle Benutzer installiert ist und dir nicht gehört, und dann einmal pro Vorgang über den normalen macOS-Dialog. Objekte im Papierkorb gehören danach dir, sodass das Leeren kein Passwort braucht.
-- Jeder Pfad wird vor dem Entfernen geprüft: Er muss in einem Plug-in- oder Support-Ordner liegen und darf nie ein Format-Ordner selbst oder dessen übergeordneter Ordner sein. Symbolische Links werden nie verfolgt.
-- Hardlinks (Waves legt Shells so ab) werden erkannt, damit angezeigter und tatsächlich freiwerdender Speicherplatz stimmen.
+- The Trash is always the default. Deleting immediately requires a confirmation.
+- An administrator password is requested only for plug-ins installed for all users that you don't own, once per operation, through the standard macOS prompt. Items it moves to the Trash are handed to you, so emptying the Trash never asks for a password.
+- Every path is checked before removal: it must sit inside a plug-in or support folder and may never be a format folder itself or one of its parents. Symbolic links are never followed.
+- Hard links, which Waves uses for its shells, are detected, so the size shown matches the space actually freed.
 
-## Voraussetzungen
+## Requirements
 
-- macOS 14 Sonoma oder neuer
-- Xcode oder die Command Line Tools (`xcode-select --install`)
+- macOS 14 Sonoma or later
+- Xcode or the Command Line Tools (`xcode-select --install`)
 
-## Bauen und starten
-
-```bash
-make app        # Universal-App (Apple Silicon + Intel) nach build/Plugboard.app
-make run        # bauen und öffnen
-make install    # nach /Applications kopieren
-make check      # Kern-Checks und Übersetzungs-Check
-make debug      # schneller Debug-Build nur für diese Architektur
-make snapshot   # Fenster in mehreren Zuständen nach build/snapshots rendern
-make icon       # App-Icon neu zeichnen
-```
-
-Der Build läuft über `Scripts/build.sh` direkt mit `swiftc`, weil Swift Package Manager in den Command Line Tools 15.0 mit „unable to lookup item 'PlatformPath'“ abbricht. Mit Xcode oder neueren Command Line Tools funktioniert auch `swift build`, das `Package.swift` beschreibt dieselben Module.
-
-Ohne Entwicklerzertifikat wird die App ad hoc signiert, was auf dem Mac, der sie gebaut hat, reicht. Zum Weitergeben mit Developer ID signieren und danach notarisieren:
+## Build and run
 
 ```bash
-SIGN_IDENTITY="Developer ID Application: Dein Name (TEAMID)" make app
+make app        # universal app (Apple silicon + Intel) at build/Plugboard.app
+make run        # build and open
+make install    # copy to /Applications
+make check      # core checks and translation check
+make debug      # faster debug build for this architecture only
+make snapshot   # render the window in several states to build/snapshots
+make icon       # redraw the app icon
 ```
 
-## Aufbau
+The build calls `swiftc` directly through `Scripts/build.sh`, because Swift Package Manager in Command Line Tools 15.0 stops with "unable to lookup item 'PlatformPath'". With Xcode or newer Command Line Tools, `swift build` works too; `Package.swift` describes the same modules.
 
-| Ordner | Inhalt |
+Without a developer certificate the app is signed ad hoc, which is enough on the Mac that built it. To distribute it, sign with a Developer ID and notarize it afterwards:
+
+```bash
+SIGN_IDENTITY="Developer ID Application: Your Name (TEAMID)" make app
+```
+
+## Project layout
+
+| Folder | Contents |
 | --- | --- |
-| `Sources/PlugboardCore` | Scanner, Metadaten-Leser (Info.plist, VST3 `moduleinfo.json`, Mach-O, Code-Signatur), Größenberechnung, Gruppierung, Aufräum-Analyse, DAW-Erkennung, Entfernen mit Pfadschutz, Reste-Suche, CSV-Export |
-| `Sources/Plugboard` | SwiftUI-App: Seitenleiste, Tabelle, Inspektor, Übersicht, Waves-Versionen, Prüf-Dialog, Einstellungen |
-| `Sources/PlugboardChecks` | Checks für den Kern, inklusive echter Lösch- und Wiederherstellungsläufe in einem Wegwerf-Ordner |
-| `Resources` | Info.plist, Übersetzungen (`en.lproj`, `de.lproj`), App-Icon |
-| `Scripts` | Build, Bundle, Icon-Generator, Übersetzungs-Check |
+| `Sources/PlugboardCore` | Scanner, metadata readers (Info.plist, VST3 `moduleinfo.json`, Mach-O, code signature), disk usage, grouping, cleanup analysis, DAW detection, removal with path protection, leftover search, CSV export |
+| `Sources/Plugboard` | SwiftUI app: sidebar, table, inspector, overview, Waves versions, review sheet, settings |
+| `Sources/PlugboardChecks` | Checks for the core, including real removal and restore runs in a throwaway folder |
+| `Resources` | Info.plist, localizations (`en.lproj`, `de.lproj`), app icon |
+| `Scripts` | Build, bundle, icon generator, translation check |
 
-Der Scan-Cache liegt in `~/Library/Caches/app.plugboard.Plugboard/`. Unveränderte Plug-ins werden beim nächsten Start nicht neu gelesen.
+## Localization
+
+English is the development language. German lives in `Resources/de.lproj`, with plural rules in `Localizable.stringsdict`. `Scripts/check-localization.py` lists every user-facing string in the sources and fails when a German translation is missing.
+
+The scan cache is stored in `~/Library/Caches/app.plugboard.Plugboard/`. Unchanged plug-ins are not read again on the next launch.

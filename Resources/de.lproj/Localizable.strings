@@ -1,6 +1,7 @@
-/* Plugboard – deutsche Übersetzung.
-   Anrede: du. Begriffe: Plug-in, Papierkorb, Hersteller, Speicherplatz, deinstallieren.
-   Pluralformen stehen in Localizable.stringsdict. Prüfen mit Scripts/check-localization.py. */
+/* Plugboard – German localization.
+   Address the reader informally ("du"). Terms: Plug-in, Papierkorb (Trash), Hersteller (vendor),
+   Speicherplatz (disk space), deinstallieren (uninstall).
+   Plural forms live in Localizable.stringsdict. Check coverage with Scripts/check-localization.py. */
 
 /* Navigation */
 "Overview" = "Übersicht";
